@@ -9,6 +9,7 @@ require 'i18n/tasks/command/commands/data'
 require 'i18n/tasks/command/commands/tree'
 require 'i18n/tasks/command/commands/meta'
 require 'i18n/tasks/command/commands/xlsx'
+require 'i18n/tasks/command/commands/export'
 require 'i18n/tasks/command/commander'
 
 module I18n::Tasks
@@ -22,6 +23,7 @@ module I18n::Tasks
     include Command::Commands::Tree
     include Command::Commands::Meta
     include Command::Commands::XLSX
+    include Command::Commands::Export
 
     include Term::ANSIColor
     require 'highline/import'
